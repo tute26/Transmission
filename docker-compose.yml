@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  transmission:
+    image: linuxserver/transmission
+    volumes:
+      - "/home/tutecloud1/docker/Transmission/:/config"
+      - "/var/www/html/media/torrents/:/downloads"
+    ports:
+      - "9091:9091" 
+      - "51413:51413"
